@@ -15,8 +15,10 @@ import java.util.Map;
 public class WeatherController {
     @Value("${weather.api.key}")
     private String apiKey;
+
     @Value("${weather.api.url}")
     private String apiUrl;
+    
     @Autowired
     private RestTemplate restTemplate;
     
